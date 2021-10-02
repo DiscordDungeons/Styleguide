@@ -8,6 +8,7 @@ import Content from '../layout/Content'
 import Image from 'next/image'
 import NavigationMenu from './NavigationMenu'
 import logo from '../../../public/logo.png'
+import Header from '../layout/Header'
 
 interface StylePageProps {
 	title?: string

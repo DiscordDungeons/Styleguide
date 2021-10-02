@@ -1,72 +1,31 @@
 import { NextPage } from 'next'
+import Col from '../../components/layout/Grid/Col'
+import Row from '../../components/layout/Grid/Row'
 import StylePage from '../../components/misc/StylePage'
+import FontDisplay from '../../components/styleguide/FontDisplay'
 
 const Typography: NextPage = () => {
 	return (
 		<StylePage title={'Typography | Discord Dungeons Styleguide'}>
-			Typography to use
-			<hr />
-			Lato
-			
 
-			<h1>The quick brown fox jumps over the lazy dog.</h1>
-			<h2>The quick brown fox jumps over the lazy dog.</h2>
-			<h3>The quick brown fox jumps over the lazy dog.</h3>
-			<h4>The quick brown fox jumps over the lazy dog.</h4>
-			<h5>The quick brown fox jumps over the lazy dog.</h5>
-			<h6>The quick brown fox jumps over the lazy dog.</h6>
+			<Row>
+				<header>
+					<Col lg={6}>
+						<h1>Typography</h1>
 
-			<hr />
+						<p>
+							The Discord Dungeons typography is based on two distinct font families.
+							For regular text, we use Lato.
+							For "spicy" text we use Futura.
+						</p>
+					</Col>
+				</header>
+			</Row>
+			<Row>
+				<FontDisplay family={'Lato'} />
+				<FontDisplay family={'Futura'} />
+			</Row>
 
-			<div style={{ fontFamily:'Futura' }}>
-				Futura
-
-				<h1>The quick brown fox jumps over the lazy dog.</h1>
-				<h2>The quick brown fox jumps over the lazy dog.</h2>
-				<h3>The quick brown fox jumps over the lazy dog.</h3>
-				<h4>The quick brown fox jumps over the lazy dog.</h4>
-				<h5>The quick brown fox jumps over the lazy dog.</h5>
-				<h6>The quick brown fox jumps over the lazy dog.</h6>
-			</div>
-
-			<hr />
-
-			<div style={{ fontFamily:'Helvetica' }}>
-				Helvetica
-
-				<h1>The quick brown fox jumps over the lazy dog.</h1>
-				<h2>The quick brown fox jumps over the lazy dog.</h2>
-				<h3>The quick brown fox jumps over the lazy dog.</h3>
-				<h4>The quick brown fox jumps over the lazy dog.</h4>
-				<h5>The quick brown fox jumps over the lazy dog.</h5>
-				<h6>The quick brown fox jumps over the lazy dog.</h6>
-			</div>
-
-			<hr />
-
-			<div style={{ fontFamily:'Raleway' }}>
-				Raleway
-
-				<h1>The quick brown fox jumps over the lazy dog.</h1>
-				<h2>The quick brown fox jumps over the lazy dog.</h2>
-				<h3>The quick brown fox jumps over the lazy dog.</h3>
-				<h4>The quick brown fox jumps over the lazy dog.</h4>
-				<h5>The quick brown fox jumps over the lazy dog.</h5>
-				<h6>The quick brown fox jumps over the lazy dog.</h6>
-			</div>
-
-			<hr />
-
-			<div style={{ fontFamily:'Raleway', fontWeight: 700 }}>
-				Raleway Bold
-
-				<h1>The quick brown fox jumps over the lazy dog.</h1>
-				<h2>The quick brown fox jumps over the lazy dog.</h2>
-				<h3>The quick brown fox jumps over the lazy dog.</h3>
-				<h4>The quick brown fox jumps over the lazy dog.</h4>
-				<h5>The quick brown fox jumps over the lazy dog.</h5>
-				<h6>The quick brown fox jumps over the lazy dog.</h6>
-			</div>
 		</StylePage>
 	)
 }
