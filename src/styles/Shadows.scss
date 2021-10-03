@@ -1,0 +1,28 @@
+$shadowColor: #00000033;
+
+.shadow {
+	&-sm {
+		box-shadow: 0px 2px 2px $shadowColor;
+	}
+
+	&-default {
+		box-shadow: 0px 4px 6px $shadowColor;
+	}
+
+	&-md {
+		box-shadow: 0px 5px 15px $shadowColor;
+	}
+
+	&-lg {
+		//background: #F5F5F5 0% 0% no-repeat padding-box;
+		box-shadow: 0px 10px 24px $shadowColor;
+	}
+
+	&-xl {
+		box-shadow: 0px 15px 35px $shadowColor;
+	}
+
+	&-2xl {
+		box-shadow: 0px 25px 45px $shadowColor;
+	}
+}

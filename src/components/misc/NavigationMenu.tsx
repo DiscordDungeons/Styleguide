@@ -32,6 +32,20 @@ const NavigationMenu: React.FunctionComponent = () => {
 							title: 'Icons',
 							itemId: '/style/icons',
 						},
+						{
+							title: 'Shadows',
+							itemId: '/style/shadows',
+						},
+					],
+				},
+				{
+					title: 'Layout',
+					itemId: '',
+					subNav: [
+						{
+							title: 'Grid',
+							itemId: '/layout/grid',
+						},
 					],
 				},
 			]}
