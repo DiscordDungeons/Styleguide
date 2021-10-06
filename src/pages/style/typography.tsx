@@ -24,6 +24,7 @@ const Typography: NextPage = () => {
 			<Row>
 				<FontDisplay family={'Lato'} />
 				<FontDisplay family={'Futura'} />
+				<FontDisplay family={'Inter'} />
 			</Row>
 
 		</StylePage>

@@ -20,7 +20,7 @@ const ColorDisplay: React.FunctionComponent<Props> = ({
 		</Row>
 		<Row flexColumn>
 			<br />
-			<h4>{name}</h4>
+			<h5>{name}</h5>
 			<p>{color}</p>
 		</Row>
 	</Col>

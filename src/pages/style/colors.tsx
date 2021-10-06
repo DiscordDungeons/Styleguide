@@ -35,6 +35,11 @@ const Colors: NextPage = () => {
 						<ColorDisplay color="#3B4255" name='Independence'/>
 						<ColorDisplay color="#3C9E94" name='Pine Green'/>
 						<ColorDisplay color="#F3F7F9" name='Off White'/>
+
+						<ColorDisplay color="#F8F9FA" name='Cultured'/>
+						<ColorDisplay color="#E1E4E8" name='Gainsboro'/>
+						<ColorDisplay color="#2F3A47" name='Dark grey'/>
+
 					</Row>
 				</Col>
 			</Row>

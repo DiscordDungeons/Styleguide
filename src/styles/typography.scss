@@ -1,20 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap');
 
-$textColor: #474747;
+$textColor: #39414F;
 $subtextColor: #707070;
+$lightTextColor: #9DA3AD;
 
 $font-sizes: (
-	h1: 44px,
-	h2: 32px,
-	h3: 20px,
-	h4: 14px,
-	h5: 12px,
-	h6: 6px
+	h1: 4rem,
+	h2: 3rem,
+	h3: 2.25rem,
+	h4: 1.875rem,
+	h5: 1.5rem,
+	h6: 1.25rem
 );
 
 @mixin textColors {
+	color: $textColor;
+
 	&.subtext {
 		color: $subtextColor;
+	}
+
+	&.light {
+		color: $lightTextColor;
+	}
+
+	&.success {
+		
+	}
+}
+
+@mixin fontWeight {
+	&.thin {
+		font-weight: 300;
+	}
+
+	font-weight: normal;
+
+	&.thick {
+		font-weight: bold;
 	}
 }
 
@@ -27,21 +51,22 @@ $font-sizes: (
 		margin-top: 0;
    		margin-bottom: .5rem;
 
-		font-weight: 700;
-
-		color: $textColor;
-
 		@include textColors();
+		@include fontWeight();
 	}
 } 
 
 p {
-	font-size: 14px;
+	font-size: 1rem;
 	margin-top: 0;
 	margin-bottom: 1rem;
 	line-height: 1.2;
 
-	color: $textColor;
-
 	@include textColors();
+	@include fontWeight();
+}
+
+span {
+	@include textColors();
+	@include fontWeight();
 }
